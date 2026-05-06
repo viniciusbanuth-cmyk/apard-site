@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>APARD — Gestão Patrimonial Independente</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231D3828'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='bold' fill='%23C8B560' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
   <meta name="description" content="APARD é uma Consultoria de Valores Mobiliários regulada pela CVM, dedicada à gestão patrimonial independente com ética, transparência e expertise.">
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>emailjs.init('lN_uVmYh0nFq-BEOc');</script>
@@ -41,13 +42,13 @@
     a { text-decoration: none; color: inherit; }
 
     /* ── Nav ──────────────────────────────────────── */
-    nav {
+    #navbar {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
       padding: 1.2rem 6%;
       transition: background 0.4s ease, box-shadow 0.4s ease;
     }
-    nav.scrolled {
+    #navbar.scrolled {
       background: rgba(8,15,10,0.97);
       backdrop-filter: blur(12px);
       box-shadow: 0 1px 0 rgba(200,181,96,0.25);
@@ -522,7 +523,7 @@
       }
       .nav-links.open { display: flex; }
       .hamburger { display: flex; }
-      nav { background: rgba(8,15,10,0.95); backdrop-filter: blur(12px); }
+      #navbar { background: rgba(8,15,10,0.95); backdrop-filter: blur(12px); }
     }
     @media (max-width: 560px) {
       section { padding: 4rem 6%; }
