@@ -164,6 +164,16 @@ section { padding: clamp(64px, 9vw, 112px) 0; position: relative; }
 .price-body .checks { margin: 1.2rem 0 1.8rem; }
 .safe { text-align: center; font-size: .78rem; color: var(--slate); margin-top: 1rem; }
 
+/* Instalar no celular */
+.install-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: center; }
+.app-chip { display: inline-flex; align-items: center; gap: 1rem; margin-top: 1.6rem; padding: .8rem 1.3rem .8rem .8rem; background: #fff; border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 18px 36px -24px rgba(29,56,40,.5); }
+.app-chip img { width: 64px; height: 64px; border-radius: 16px; }
+.app-chip b { display: block; font-family: var(--display); font-weight: 500; font-size: 1.15rem; color: var(--forest); } .app-chip span { font-size: .8rem; color: var(--slate); }
+.install-steps { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.install-card { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 1.5rem; }
+.install-card h3 { margin-bottom: .8rem; } .install-card ol { padding-left: 1.2rem; display: grid; gap: .6rem; color: var(--slate); font-size: .92rem; }
+.install-card strong { color: var(--ink); font-weight: 600; }
+
 /* Consultoria */
 .cons-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 64px; align-items: center; }
 .photo { position: relative; max-width: 420px; margin-inline: auto; }
@@ -219,7 +229,7 @@ footer { background: var(--ink); color: rgba(242,237,216,.55); padding: 56px 0 4
 
 /* Responsivo */
 @media (max-width: 960px) {
-  .hero-grid, .alice-grid, .feat, .cons-grid, .contato-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-grid, .alice-grid, .feat, .cons-grid, .contato-grid, .install-grid { grid-template-columns: 1fr; gap: 40px; }
   .feat.rev .feat-text { order: 0; } .grid3, .steps { grid-template-columns: 1fr; } .stats { grid-template-columns: repeat(2, 1fr); }
   .burger { display: block; }
   .nav-links { position: fixed; inset: 72px 0 auto 0; background: rgba(8,15,10,.98); flex-direction: column; align-items: stretch; gap: 0; padding: .5rem 20px 1.4rem; max-height: 0; overflow: hidden; visibility: hidden; transition: max-height .35s, visibility .35s; }
@@ -229,6 +239,6 @@ footer { background: var(--ink); color: rgba(242,237,216,.55); padding: 56px 0 4
   #hero { padding: 112px 0 72px; }
 }
 @media (max-width: 560px) {
-  .row2 { grid-template-columns: 1fr; } .cta-row .btn { width: 100%; } .float { display: none; }
+  .row2, .install-steps { grid-template-columns: 1fr; } .cta-row .btn { width: 100%; } .float { display: none; }
   .pillar { grid-template-columns: 70px 1fr 28px; } .photo::before { inset: 12px -8px -12px 8px; }
 }
